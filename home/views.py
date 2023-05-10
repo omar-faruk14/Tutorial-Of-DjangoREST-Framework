@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 def display(request):
-    return HttpResponse("Hello")
+    return render(request,'index.html')
 
 class HelloWorld(APIView):
     def get(self, request):
